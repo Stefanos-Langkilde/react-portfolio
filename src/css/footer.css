@@ -1,7 +1,46 @@
-.iconGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    grid-gap: 20px;
+:root {
+    --rich-black: #0d1321ff;
+    --prussian-blue: #1d2d44ff;
+    --paynes-gray: #3e5c76ff;
+    --silver-lake-blue-Footer: #748cabff;
+    --eggshellText: #f0ebd8ff;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 10em;
+    background-color: var(--silver-lake-blue-Footer);
+    margin: auto;
+    padding: 0.5em;
+    color: var(--eggshellText);
+}
+
+.center-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.logoSize {
+    display: grid;
+    margin: auto;
+    padding: 0.3em;
+}
+  
+.logoSize img {
+    margin: auto;
+    width: auto;
+    height: 50px;
 }

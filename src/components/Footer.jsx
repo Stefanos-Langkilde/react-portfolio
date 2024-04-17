@@ -1,17 +1,21 @@
 import React from 'react';
 import GitHub from '../assets/images/GitHub-logo.png';
 import linkedin from '../assets/images/linkedin-icon.png';
-import LogoComponent from './logoComponent';
+import IconGrid from './IconGrid';
 import '../css/footer.css';
 
 const Footer = () => {
+    const icons = [
+        {src: GitHub, alt: "Link to Github", link:"https://github.com/Stefanos-Langkilde"},
+        {src: linkedin, alt: "Link to Linkedin", link:"https://www.linkedin.com/in/stefanos-karambelas-langkilde/"}
+    ];
+
     return (
         <footer>
-            <p>© 2022 Stefanos K. Langkilde</p>
-            <p>Email: zinzpawn@mail.com</p>
-            <div className="iconGrid">
-                <LogoComponent logoSource={GitHub} altText="Link to Github" siteLink="https://github.com/Stefanos-Langkilde" />
-                <LogoComponent logoSource={linkedin} altText="Link to Linkedin" siteLink="https://www.linkedin.com/in/stefanos-karambelas-langkilde/" />
+            <div className="center-content">
+                <p>Stefanos K. Langkilde</p>
+                <p>Email: zinzpawn@mail.com</p>
+                <IconGrid icons={icons} />
             </div>
         </footer>
     );
