@@ -14,7 +14,7 @@ const Footer = () => {
         <footer>
             <div className="center-content">
                 <p>Stefanos K. Langkilde</p>
-                <p>Email: zinzpawn@mail.com</p>
+                <p>Email: zinzpawn@gmail.com</p>
                 <IconGrid icons={icons} />
             </div>
         </footer>

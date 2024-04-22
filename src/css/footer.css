@@ -16,6 +16,7 @@ footer {
     background-color: var(--silver-lake-blue-Footer);
     margin: auto;
     padding: 0.5em;
+    padding-bottom: 3em;
     color: var(--eggshellText);
 }
 

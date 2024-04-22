@@ -1,0 +1,15 @@
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(80px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.iconSize {
+    display: grid;
+    margin: auto;
+    padding: 0.3em;
+    width: 64px;
+}
